@@ -1,0 +1,5 @@
+# Overview
+The task in this practical is to extend the provided Client/Server such that CHAP authentication is included. Client and Server execute a simple data exchange. The protocol uses messages in JSON format; the client sends a HELLO message to which the server responds with a HELLO ACK message. Thereafter the Client sends a DATA message and the Server finally responds with a CLOSE message. The aim is to expand the messages (include additional fields) such that the Client can be authenticated by the server when receiving the DATA message.
+
+## Comments
+As challenge a random integer number can be provided. A random integer number can be created with the function random.randint(). An MD5 hash can be created using hashlib.md5(). The user password can be stored at client and server in cleartext.
